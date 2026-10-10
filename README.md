@@ -47,20 +47,15 @@ Note that macOS builds are not yet signed, so they do not auto-update. For now, 
 - [Intel](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-x64.dmg)
 - [Universal](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-universal.dmg)
 
-### Linux
+### Linux (Snap)
 
-In most cases, you very likely want to use the [Flatpak](https://flathub.org/apps/rocks.shy.VacuumTube), which works across all distributions and common architectures.
+You can install VacuumTube as a Snap package:
 
-Otherwise, you can use a distribution package or a portable one. If you don't know the difference, you likely want amd64.
+```bash
+sudo snap install vacuumtube_*.snap --dangerous
+```
 
-- amd64 / x86_64
-  - [AppImage](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-x86_64.AppImage)
-  - [Ubuntu/Debian/Mint (.deb)](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-amd64.deb)
-  - [tarball](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-x64.tar.gz)
-- Arm® 64 / aarch64
-  - [AppImage](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-arm64.AppImage)
-  - [Ubuntu/Debian/Mint (.deb)](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-arm64.deb)
-  - [tarball](https://github.com/shy1132/VacuumTube/releases/latest/download/VacuumTube-arm64.tar.gz)
+Or download the latest `.snap` package directly from the [GitHub Actions Artifacts](https://github.com/elytraVIII/VacuumTube-snap/actions) or Releases.
  
 ## Settings
 
