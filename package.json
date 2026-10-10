@@ -6,7 +6,8 @@
     "scripts": {
         "test": "node --test",
         "start": "electron .",
-        "build:snap": "electron-builder --linux snap"
+        "postinstall": "node scripts/patch-electron-builder.js",
+        "build:snap": "node scripts/patch-electron-builder.js && electron-builder --linux snap"
     },
     "keywords": [
         "youtube",
