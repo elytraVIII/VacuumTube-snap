@@ -43,43 +43,29 @@
                 }
             ]
         },
-        "snap": {
-            "base": "core24",
-            "grade": "stable",
-            "confinement": "strict",
-            "summary": "YouTube for TV, on your PC",
-            "plugs": [
-                "default",
-                "audio-playback",
-                "audio-record",
-                "pulseaudio",
-                "network",
-                "network-bind",
-                "browser-support",
-                "camera",
-                "opengl",
-                "wayland",
-                "x11"
-            ]
-        },
         "snapcraft": {
             "base": "core24",
-            "grade": "stable",
-            "confinement": "strict",
-            "summary": "YouTube for TV, on your PC",
-            "plugs": [
-                "default",
-                "audio-playback",
-                "audio-record",
-                "pulseaudio",
-                "network",
-                "network-bind",
-                "browser-support",
-                "camera",
-                "opengl",
-                "wayland",
-                "x11"
-            ]
+            "core24": {
+                "useLXD": true,
+                "grade": "stable",
+                "confinement": "strict",
+                "summary": "YouTube for TV, on your PC",
+                "plugs": [
+                    "default",
+                    "network",
+                    "network-bind",
+                    "audio-playback",
+                    "audio-record",
+                    "pulseaudio",
+                    "camera",
+                    {
+                        "browser-sandbox": {
+                            "interface": "browser-support",
+                            "allow-sandbox": true
+                        }
+                    }
+                ]
+            }
         }
     },
     "devDependencies": {

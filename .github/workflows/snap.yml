@@ -33,6 +33,9 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Setup LXD
+        uses: canonical/setup-lxd@v1
+
       - name: Install Snapcraft
         run: |
           sudo snap install snapcraft --classic
