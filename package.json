@@ -44,6 +44,26 @@
             ]
         },
         "snap": {
+            "base": "core24",
+            "grade": "stable",
+            "confinement": "strict",
+            "summary": "YouTube for TV, on your PC",
+            "plugs": [
+                "default",
+                "audio-playback",
+                "audio-record",
+                "pulseaudio",
+                "network",
+                "network-bind",
+                "browser-support",
+                "camera",
+                "opengl",
+                "wayland",
+                "x11"
+            ]
+        },
+        "snapcraft": {
+            "base": "core24",
             "grade": "stable",
             "confinement": "strict",
             "summary": "YouTube for TV, on your PC",
